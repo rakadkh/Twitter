@@ -1,4 +1,4 @@
-const Render = function(){
+const Renderer = function(){
     const renderPosts=function(posts){
         $("#posts").empty();
         for (post of post){
@@ -11,5 +11,7 @@ const Render = function(){
             $("#posts").append(newPost)
         }
     }
-    return renderPosts
+    return{
+        renderPosts: renderPosts
+    }
 }
